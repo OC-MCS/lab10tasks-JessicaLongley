@@ -1,1 +1,3 @@
-// main goes here
+#include <iostream>
+
+using namespace std;
