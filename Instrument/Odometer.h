@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "FuelGauge.h"
 
 using namespace std;
 //know the car's current milage
@@ -11,13 +12,9 @@ using namespace std;
 class Odometer
 {
     int milage;
-
+    
 public:
 	Odometer();
     int getMilage();
-    void addMile();
+    void addMile(FuelGauge &fuelInst);
 };
-
-//what is fuel economy?
-//would this use inheritance or aggregation?
-//Is addMile only in Odometer or is it one of the funky two-class funcitons

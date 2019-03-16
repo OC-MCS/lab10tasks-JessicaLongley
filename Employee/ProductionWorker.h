@@ -5,13 +5,15 @@
 
 using namespace std;
 
-class ProductionWorker
+class ProductionWorker: public Employee
 {
     int shift; //day shift = 1 , night shift = 2
     double hourlyPay;
-    Employee emp;//an employee is created every time a shift is created
     
 public:
-	ProductionWorker();
+    int getShift();
+    double getHourlyPay();
+	ProductionWorker(int, double, string, string, string);
+    ProductionWorker(int, double, Employee);
 };
 

@@ -9,7 +9,8 @@ using namespace std;
 //decrement the amount of fuel bu 1 gallon, if the amount of fuel is greater than 0 gallons. This simulates the fuel as the car runs
 class FuelGauge
 {
-    int fuel;
+
+    int fuel; //how do i pass this to Odometer without making it public?
 public:
 	FuelGauge();
     void moreFuel();

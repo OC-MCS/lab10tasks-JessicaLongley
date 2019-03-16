@@ -4,13 +4,6 @@
 
 using namespace std;
 
-Employee::Employee()
-{
-    //name = "NA"; NO DEFALT CONSTRUCTORS WOOPS
-    //number = "NA";
-    //hireDate = "NA";
-}
-
 Employee::Employee(string nam, string num, string date)
 {
     name = nam;
@@ -18,4 +11,17 @@ Employee::Employee(string nam, string num, string date)
     hireDate = date;
 }
 
+string Employee::getName()
+{
+    return name;
+}
 
+string Employee::getNumber()
+{
+    return number;
+}
+
+string Employee::getHireDate()
+{
+    return hireDate;
+}
