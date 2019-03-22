@@ -25,39 +25,39 @@ int main()
     for (int count = 0; count < NUM_SHIPS; count++)
     {
         cout << "Ship #" << (count + 1) << ":\n";
-        ships*[count].print();
+        ships[count]->print();  //DO WE USE THIS FOR FUNCTIONS?
         cout << endl;
     }
 
-    //old display test
-    Ship S("SS.Boat", "1999");
-    cout << "The ship's name is: " << S.getName() << endl;
-    cout << "The ship was built in: " << S.getYearBuilt() << endl;
-    S.changeName("SS.Sam");
-    cout << "After changing the ship's name, the ship's name is: " << S.getName() << endl << endl;
-    cout << "Using print function: ";
-    S.print();
-    cout << endl << endl;
+    ////old display test
+    //Ship S("SS.Boat", "1999");
+    //cout << "The ship's name is: " << S.getName() << endl;
+    //cout << "The ship was built in: " << S.getYearBuilt() << endl;
+    //S.changeName("SS.Sam");
+    //cout << "After changing the ship's name, the ship's name is: " << S.getName() << endl << endl;
+    //cout << "Using print function: ";
+    //S.print();
+    //cout << endl << endl;
 
-    CruiseShip C(400, "BigBoat", "2002");
-    cout << "This ship's maximum capicity is: " << C.getMax() << endl;
-    cout << "The ship's name is: " << C.getName() << endl;
-    cout << "The ship was built in: " << C.getYearBuilt() << endl;
-    C.changeName("SeriouslyBigBoat");
-    cout << "After changing the ship's name, the ship's name is: " << C.getName() << endl << endl;
-    cout << "Using print function: ";
-    C.print();
-    cout << endl << endl;
+    //CruiseShip C(400, "BigBoat", "2002");
+    //cout << "This ship's maximum capicity is: " << C.getMax() << endl;
+    //cout << "The ship's name is: " << C.getName() << endl;
+    //cout << "The ship was built in: " << C.getYearBuilt() << endl;
+    //C.changeName("SeriouslyBigBoat");
+    //cout << "After changing the ship's name, the ship's name is: " << C.getName() << endl << endl;
+    //cout << "Using print function: ";
+    //C.print();
+    //cout << endl << endl;
 
-    CargoShip B(1000, "SS.Heavy", "2008");
-    cout << "This ship's cargo capicity in tonnage is: " << B.getCap() << endl;
-    cout << "The ship's name is: " << B.getName() << endl;
-    cout << "The ship was built in: " << B.getYearBuilt() << endl;
-    B.changeName("StillHeavy");
-    cout << "After changing the ship's name, the ship's name is: " << B.getName() << endl << endl;
-    cout << "Using print function: ";
-    B.print();
-    cout << endl << endl;
+    //CargoShip B(1000, "SS.Heavy", "2008");
+    //cout << "This ship's cargo capicity in tonnage is: " << B.getCap() << endl;
+    //cout << "The ship's name is: " << B.getName() << endl;
+    //cout << "The ship was built in: " << B.getYearBuilt() << endl;
+    //B.changeName("StillHeavy");
+    //cout << "After changing the ship's name, the ship's name is: " << B.getName() << endl << endl;
+    //cout << "Using print function: ";
+    //B.print();
+    //cout << endl << endl;
 
     return 0;
 }
